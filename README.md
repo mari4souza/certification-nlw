@@ -6,6 +6,9 @@ A partir do e-mail cadastrado, o usuário é capaz de escolher qual tecnologia e
 
 O usuário então, seleciona a alternativa que ele acredita ser a correta para cada questão. Ao final, o usuário recebe a nota referente à certificação, que é baseada na quantidade de acertos. E por último, consegue visualizar sua posição em um ranking com as 10 melhores notas de alunos que também realizaram aquela certificação.
 
+Foram utilizados durante o desenvolvimento da aplicação padrões de arquitetura de projetos (MVC), e boas práticas de programação.
+A aplicação também dispõe de tratamento de erros, impedindo que um usuário com e-mail não cadastrado realize a prova e impedindo também a realização de certificações que já foram obtidas anteriormente.
+
 ## Pré-requisitos
 
 Antes de executar o projeto, certifique-se de ter as seguintes dependências instaladas:
@@ -32,18 +35,17 @@ Este link pode ser encontrado no botão verde acima `Code`.
 
 ### Instale as dependências
 
-```bash
-npm install
-```
+Não é necssária a instalação pois as dependências que usaremos já foram instaladas previamente com as configurações padrão. São elas: `Spring Web`, `Spring Boot Dev Tools`, `Lombok` e `Spring Data JPA`.
 
 ### Defina as variáveis de ambiente
 
-Descrição de como definir as variáveis de ambiente
+No arquivo “Aplication Properties” definir em qual porta a aplicação deverá rodar a aplicação. Exemplo: `server.port=8085`.
+
 
 ### Execute o Projeto
 
 ```bash
-npm run dev
+mvn spring-boot:run
 ```
 
 ## Estrutura de Pastas
@@ -71,9 +73,6 @@ A estrutura de pastas do projeto é organizada da seguinte maneira:
   
 * `...`: Outras informações
 
-### Configurações e CI/CD
-
-* `pasta3/arquivo`: Configurações técnicas do projeto.
 
 ## Como contribuir
 
@@ -86,8 +85,13 @@ Se você deseja contribuir para este projeto, siga as etapas abaixo:
 5. Criar a solicitação de pull.
 
 Como alternativa, consulte a documentação do GitHub sobre [como criar uma solicitação de pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+    
 
-## Membros do Projeto (Opcional)
+## Licença
+
+Este projeto está sob licença. Consulte [LICENSE](LICENSE.md) para obter mais informações.
+
+## Membros do Projeto 
 
 <table>
   <tr>
@@ -100,12 +104,3 @@ Como alternativa, consulte a documentação do GitHub sobre [como criar uma soli
         </sub>
       </a>
     </td>
-    
-
-## Licença
-
-Este projeto está sob licença. Consulte [LICENSE](LICENSE.md) para obter mais informações.
-
-## Voltar ao topo
-
-[⬆ Voltar ao topo](#título)
