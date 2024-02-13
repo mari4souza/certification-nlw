@@ -6,8 +6,10 @@ A partir do e-mail cadastrado, o usuário é capaz de escolher qual tecnologia e
 
 O usuário então, seleciona a alternativa que ele acredita ser a correta para cada questão. Ao final, o usuário recebe a nota referente à certificação, que é baseada na quantidade de acertos. E por último, consegue visualizar sua posição em um ranking com as 10 melhores notas de alunos que também realizaram aquela certificação.
 
-Foram utilizados durante o desenvolvimento da aplicação padrões de arquitetura de projetos (MVC), e boas práticas de programação.
 A aplicação também dispõe de tratamento de erros, impedindo que um usuário com e-mail não cadastrado realize a prova e impedindo também a realização de certificações que já foram obtidas anteriormente.
+
+Foram utilizados durante o desenvolvimento da aplicação padrões de arquitetura de projetos MVC (Model-View-Controller) e Clean Architecture com Controllers, Use Cases, DTOs, Entidades e Repositórios, mantendo sempre as boas práticas de programação que facilitam a manutenção, escalabilidade e reusabilidade do código.
+
 
 ## Estrutura do Projeto
 
@@ -20,8 +22,9 @@ Antes de executar o projeto, certifique-se de ter as seguintes dependências ins
 
 - Antes de começar, verifique se você possui o `Java 17` instalado em sua máquina. Se não tiver, você pode baixá-lo [aqui](https://download.oracle.com/java/17/archive/jdk-17.0.6_windows-x64_bin.msi).
 - Também será necessária a instalação e configuração do `Maven`, baixe [aqui](https://maven.apache.org/download.cgi) e configure-o em sua máquina.
-- Por último, utilizaremos o `Doker`, a maneira mais fácil e recomendada é instalando o Docker Desktop, baixe-o [aqui](https://docs.docker.com/desktop/install/windows-install/). 
-
+- Utilizaremos o `Docker`. A maneira mais fácil e recomendada é instalando o Docker Desktop, baixe-o [aqui](https://docs.docker.com/desktop/install/windows-install/).
+- Foram utilizados o `VSCode` como editor de código e o `Httpie` como ferramenta para requisições REST, porém estes podem ser substituídos por outros de sua preferência.
+  
 ## Como executar o projeto
 
 Siga as etapas abaixo para executar o projeto em sua máquina local:
@@ -32,7 +35,7 @@ Execute os seguintes comandos a partir da pasta raiz do projeto:
 ### Clone este repositório
 
 ```bash
-git clone <link-do-repositorio>
+git clone <https://github.com/mari4souza/certification-nlw.git>
 ```
 
 Este link pode ser encontrado no botão verde acima `Code`.
@@ -94,19 +97,18 @@ A estrutura de pastas do projeto é organizada da seguinte maneira:
 
 ```
 
-<!-- Outra forma de descrever é em texto corrido -->
 
 ### Disposição e estilos
 
-* `controllers`: Dados estruturados para serem reusados de maneira X. Por exemplo Y
+* `Controllers`: São responsáveis por lidar com as requisições recebidas pela aplicação. Atuam como pontos de entrada, processam os dados de entrada, interagem com os casos de uso apropriados e coordenam a resposta de volta para o usuário.
 
-* `useCases`: Componentes que podem ser reusados entre as páginas. Por exemplo Z
+* `UseCases`: Representam casos de uso específicos da aplicação, encapsulando a lógica de negócios. Cada caso de uso define uma operação específica que a aplicação pode realizar. Eles são independentes da camada de apresentação e interagem com as entidades e repositórios para realizar ações significativas para o negócio.
 
-* `dto`: Componentes que podem ser reusados entre as páginas. Por exemplo Z
+* `DTOs`: São objetos utilizados para transferir dados entre as camadas ou componentes do sistema.
 
-* `entities`: Componentes que podem ser reusados entre as páginas. Por exemplo Z
+* `Entities`: Representam objetos de negócios no sistema e contêm lógica de negócios associada a elas. Correspondem a objetos do mundo real e são persistidas no banco de dados.
 
-* `repositories`: Componentes que podem ser reusados entre as páginas. Por exemplo Z
+* `Repositories`: São responsáveis pela persistência de entidades. Eles encapsulam a lógica de acesso a dados e fornecem métodos para recuperar, salvar, atualizar e excluir entidades no banco de dados. Eles fornecem uma abstração sobre o armazenamento de dados, permitindo que os use cases interajam com entidades sem se preocupar com os detalhes de como essas entidades são armazenadas. Os repositórios encapsulam a lógica de acesso a dados, facilitando a troca de tecnologias de armazenamento sem afetar o restante da aplicação.
   
 
 ## Como contribuir
