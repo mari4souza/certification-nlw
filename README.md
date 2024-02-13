@@ -13,7 +13,7 @@ Foram utilizados durante o desenvolvimento da aplicação padrões de arquitetur
 
 ## Estrutura do Projeto
 
-[estrutura_projeto.png]
+<img height="400px" src="/img/estrutura_projeto.png">
 
 
 ## Pré-requisitos
