@@ -23,7 +23,6 @@ Siga as etapas abaixo para executar o projeto em sua máquina local:
 
 Execute os seguintes comandos a partir da pasta raiz do projeto:
 
-<!-- Aqui é tudo exemplo, só trocar -->
 
 ### Clone este repositório
 
@@ -39,7 +38,7 @@ Não é necssária a instalação pois as dependências que usaremos já foram i
 
 ### Defina as variáveis de ambiente
 
-No arquivo “Aplication Properties” definir em qual porta a aplicação deverá rodar a aplicação. Exemplo: `server.port=8085`.
+No arquivo “Aplication Properties” definir em qual porta deverá rodar a aplicação. Exemplo: `server.port=8085`.
 
 
 ### Execute o Projeto
@@ -54,22 +53,55 @@ A estrutura de pastas do projeto é organizada da seguinte maneira:
 
 ```text
 /
-|-- pasta1/
-|   |-- arquivo1
-|   |-- arquivo2
-|-- pasta2/
-|   |-- arquivo3
-|   |-- arquivo4
-|-- ...
+|-- certifications/
+|   |-- controllers/
+|   |  |-- RankingController.java
+|   |-- useCases/
+|   |  |-- Top10RankingUseCase.java
+|-- questions/
+|   |-- controllers/
+|   |  |-- QuestionController.java
+|   |-- dto/
+|   |  |-- AlternativesResultDTO.java
+|   |  |-- QuestionResultDTO.java
+|   |-- entities/
+|   |  |-- AlternativesEntity.java
+|   |  |-- QuestionEntity.java
+|   |-- repositories/
+|   |  |-- QuestionRepository.java
+|-- students/
+|   |-- controllers/
+|   |  |-- StudentController.java
+|   |-- dto/
+|   |  |-- QuestionAnswerDTO.java
+|   |  |-- StudentCertificationAnswerDTO.java
+|   |  |-- VerifyHasCertificationDTO.java
+|   |-- entities/
+|   |  |-- AnswersCertificationsEntity.java
+|   |  |-- CertificationStudentEntity.java
+|   |  |-- StudentEntity.java
+|   |-- repositories/
+|   |  |-- CertificationStudentRepository.java
+|   |  |-- StudentRepository.java
+|   |-- useCases/
+|   |  |-- StudentCertificationAnswersUseCase.java
+|   |  |-- VerifyIfHasCertificationUseCase.java
+
 ```
 
 <!-- Outra forma de descrever é em texto corrido -->
 
 ### Disposição e estilos
 
-* `pasta1`: Dados estruturados para serem reusados de maneira X. Por exemplo Y
+* `controllers`: Dados estruturados para serem reusados de maneira X. Por exemplo Y
 
-* `pasta2`: Componentes que podem ser reusados entre as páginas. Por exemplo Z
+* `useCases`: Componentes que podem ser reusados entre as páginas. Por exemplo Z
+
+* `dto`: Componentes que podem ser reusados entre as páginas. Por exemplo Z
+
+* `entities`: Componentes que podem ser reusados entre as páginas. Por exemplo Z
+
+* `repositories`: Componentes que podem ser reusados entre as páginas. Por exemplo Z
   
 * `...`: Outras informações
 
