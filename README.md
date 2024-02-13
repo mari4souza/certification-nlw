@@ -8,7 +8,9 @@ O usuário então, seleciona a alternativa que ele acredita ser a correta para c
 
 A aplicação também dispõe de tratamento de erros, impedindo que um usuário com e-mail não cadastrado realize a prova e impedindo também a realização de certificações que já foram obtidas anteriormente.
 
-Foram utilizados durante o desenvolvimento da aplicação padrões de arquitetura de projetos MVC (Model-View-Controller) e Clean Architecture com Controllers, Use Cases, DTOs, Entidades e Repositórios, mantendo sempre as boas práticas de programação que facilitam a manutenção, escalabilidade e reusabilidade do código.
+Foi realizada a Integração com PostgreSQL Database, utilizando o Docker como Container para testar a interação do banco de dados com a aplicação.
+
+Foram utilizados durante o desenvolvimento padrões de arquitetura de projetos MVC (Model-View-Controller) e Clean Architecture com Controllers, Use Cases, DTOs, Entidades e Repositórios, mantendo sempre as boas práticas de programação que facilitam a manutenção, escalabilidade e reusabilidade do código. 
 
 
 ## Estrutura do Projeto
