@@ -9,6 +9,11 @@ O usuário então, seleciona a alternativa que ele acredita ser a correta para c
 Foram utilizados durante o desenvolvimento da aplicação padrões de arquitetura de projetos (MVC), e boas práticas de programação.
 A aplicação também dispõe de tratamento de erros, impedindo que um usuário com e-mail não cadastrado realize a prova e impedindo também a realização de certificações que já foram obtidas anteriormente.
 
+## Estrutura do Projeto
+
+[estrutura_projeto.png]
+
+
 ## Pré-requisitos
 
 Antes de executar o projeto, certifique-se de ter as seguintes dependências instaladas:
@@ -103,8 +108,6 @@ A estrutura de pastas do projeto é organizada da seguinte maneira:
 
 * `repositories`: Componentes que podem ser reusados entre as páginas. Por exemplo Z
   
-* `...`: Outras informações
-
 
 ## Como contribuir
 
