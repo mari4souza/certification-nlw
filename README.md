@@ -115,7 +115,7 @@ A estrutura de pastas do projeto é organizada da seguinte maneira:
 
 ## Preview de Requisições HTTP
 
-<img height="500px" src="/img/ranking.png">
+<img height="400px" src="/img/ranking.png">
 
 
 ## Como contribuir
