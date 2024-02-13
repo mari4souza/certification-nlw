@@ -111,7 +111,12 @@ A estrutura de pastas do projeto é organizada da seguinte maneira:
 * `Entities`: Representam objetos de negócios no sistema e contêm lógica de negócios associada a elas. Correspondem a objetos do mundo real e são persistidas no banco de dados.
 
 * `Repositories`: São responsáveis pela persistência de entidades. Eles encapsulam a lógica de acesso a dados e fornecem métodos para recuperar, salvar, atualizar e excluir entidades no banco de dados. Eles fornecem uma abstração sobre o armazenamento de dados, permitindo que os use cases interajam com entidades sem se preocupar com os detalhes de como essas entidades são armazenadas. Os repositórios encapsulam a lógica de acesso a dados, facilitando a troca de tecnologias de armazenamento sem afetar o restante da aplicação.
-  
+
+
+## Preview de Requisições HTTP
+
+<img height="500px" src="/img/ranking.png">
+
 
 ## Como contribuir
 
