@@ -1,6 +1,6 @@
 # 🎓 Certification System
 
-> Complete application of certifications made in Spring Boot.
+> Complete back-end application of certifications made in Spring Boot.
 
 A partir do e-mail cadastrado, o usuário é capaz de escolher qual tecnologia ele deseja obter a certificação. Após isso, o mesmo recebe uma lista de questões referentes a tecnologia a qual ele escolheu, com suas respectivas alternativas. 
 
@@ -10,7 +10,9 @@ A aplicação também dispõe de tratamento de erros, impedindo que um usuário 
 
 Foi realizada a Integração com PostgreSQL Database, utilizando o Docker como Container para testar a interação do banco de dados com a aplicação. Assim como o HTTPie como ferramenta para requisições REST.
 
-Foram utilizados durante o desenvolvimento padrões de arquitetura de projetos MVC (Model-View-Controller) e Clean Architecture com Controllers, Use Cases, DTOs, Entidades e Repositórios, mantendo sempre as boas práticas de programação que facilitam a manutenção, escalabilidade e reusabilidade do código. 
+Foram utilizados padrões de arquitetura de projetos MVC (Model-View-Controller), princípios do SOLID, Clean Architecture com Controllers, Use Cases, DTOs, Entidades e Repositórios, mantendo sempre as boas práticas de programação que facilitam a manutenção, escalabilidade e reusabilidade do código. 
+
+Para o desenvolvimento do projeto utilizei o Java 17,  Maven, Docker, VSCode e HTTPie. Além das dependências próprias do Spring Boot: Spring Web, Spring Boot Dev Tools, Lombok, JDBC Template e Spring Data JPA.
 
 
 ## Estrutura do Projeto
@@ -44,7 +46,7 @@ Este link pode ser encontrado no botão verde acima `Code`.
 
 ### Instale as dependências
 
-Não é necssária a instalação pois as dependências que usaremos já foram instaladas previamente com as configurações padrão. São elas: `Spring Web`, `Spring Boot Dev Tools`, `Lombok` e `Spring Data JPA`.
+Não é necssária a instalação pois as dependências que usaremos já foram instaladas previamente com as configurações padrão. São elas: `Spring Web`, `Spring Boot Dev Tools`, `Lombok`, `JDBC Template` e `Spring Data JPA`.
 
 ### Defina as variáveis de ambiente
 
